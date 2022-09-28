@@ -1,0 +1,24 @@
+[tool.poetry]
+authors     = ["Alexander Volkov <baffolobill@yandex.ru>"]
+description = "Speeds up python-hdwallet by replacing the elliptic curve math from pure python to the heavily optimized C library libsecp256k1."
+homepage    = "https://github.com/baffolobill/python-hdwallet-boosted"
+license     = "MIT"
+name        = "hdwallet_boosted"
+readme      = "README.md"
+repository  = "https://github.com/baffolobill/python-hdwallet-boosted.git"
+version     = "1.0.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hdwallet = "~2.1.1"
+coincurve = "~17.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires      = ["poetry-core>=1.0.0"]
