@@ -9,9 +9,9 @@ repository  = "https://github.com/baffolobill/python-hdwallet-boosted.git"
 version     = "1.0.0"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-hdwallet = "~2.1.1"
-coincurve = "~17.0.0"
+python = "^3.12"
+hdwallet = ">=2.1.1"
+coincurve = ">=20.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
